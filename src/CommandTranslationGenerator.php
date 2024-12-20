@@ -83,7 +83,7 @@ class CommandTranslationGenerator extends Command
 const Zora = { translations: $json }
 
 if (typeof window !== 'undefined' && typeof window.Zora !== 'undefined') {
-  Object.assign(Zora.routes, window.Zora.routes);
+  Object.assign(Zora.translations, window.Zora.translations);
 }
 
 export { Zora }
