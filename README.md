@@ -40,11 +40,11 @@ Alternatively, you can compile the translations to resources/js in your dev and 
 ```js
 // zora.js
 
-const Ziggy = {
+const Zora = {
     translations: {"en": {"php": {}, "json": {}}};
 };
 if (typeof window !== 'undefined' && typeof window.Zora !== 'undefined') {
-  Object.assign(Zora.routes, window.Zora.routes);
+  Object.assign(Zora.translations, window.Zora.translations);
 }
 
 export { Zora }
